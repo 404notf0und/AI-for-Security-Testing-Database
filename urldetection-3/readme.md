@@ -1,11 +1,11 @@
-### 黑白样本数据集<br>
-./badqueries.txt<br>
-./goodqueries.txt<br>
+### Start-Learning<br>
+基于tfidf的罗辑回归检测<br>
+### Supervised-Learning<br>
+基于字符级的LSTM检测<br>
+### Pu-Learning<br>
+测试四种半监督学习检测策略：标准分类器、PU bagging、Two-step、Positive unlabeled random forest（未测试）<br>
+### Unsupervised-Learning<br>
+测试四种无监督异常检测算法：Rubust Covariance、OneClassSVM、Isolation Forest、Local Outlier Factor<br>
 
-### 训练：<br>
-trainning.ipynb<br>
-lr.pkl	训练得到的模型<br>
-
-### 测试：<br>
-testing.ipynb<br>
-
+### Ref
+- [Positive-unlabeled learning](https://roywright.me/2017/11/16/positive-unlabeled-learning/)
