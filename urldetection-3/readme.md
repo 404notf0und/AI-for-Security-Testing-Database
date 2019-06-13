@@ -9,3 +9,4 @@
 
 ### Ref
 - [Positive-unlabeled learning](https://roywright.me/2017/11/16/positive-unlabeled-learning/)
+- [POSTER: A PU Learning based System for Potential Malicious URL Detection](http://202.119.32.195/cache/8/03/lamda.nju.edu.cn/728f012516806f9e66540baebf237058/ccs17poster.pdf)
