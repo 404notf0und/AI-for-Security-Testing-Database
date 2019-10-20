@@ -1,0 +1,1 @@
+ACTION_TABLE = {'1' : 'send_notification', '2': 'do_not_send_notificaton'}

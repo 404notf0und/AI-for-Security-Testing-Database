@@ -1,0 +1,4 @@
+gym==0.9.4
+pandas=0.19.2
+numpy=1.13.3
+tensorflow=1.4.1
