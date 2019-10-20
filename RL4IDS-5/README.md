@@ -22,3 +22,5 @@ Install all the required python packages descirbed in reuquirements.txt using th
 
 ### Step4:
 Run the code NSL_KDD_DNN_QLearning.ipynb
+
+Traning Time is about 400 seconds,the whole program processing time is about 10 minutes.

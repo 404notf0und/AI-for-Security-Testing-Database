@@ -20,7 +20,7 @@ class NetworkIntrusionEnv(gym.Env):
         self.turns = 0
         self.sum_rewards = 0.0
 
-    def _step(self, action_index):
+    def step(self, action_index):
         """
 
         Parameters
@@ -58,7 +58,7 @@ class NetworkIntrusionEnv(gym.Env):
         
         return self.ob, self.reward, self.episode_over, {}
 
-    def _reset(self):
+    def reset(self):
         """
         Reset the environment and supply a new state for initial state
         :return:
@@ -69,10 +69,10 @@ class NetworkIntrusionEnv(gym.Env):
         self.sum_rewards = 0.0
         return self.ob
 
-    def _render(self, mode='human', close=False):
+    def render(self, mode='human', close=False):
         pass
 
-    def _take_action(self, action_index):
+    def take_action(self, action_index):
         """
         Take an action correpsonding to action_index in the current state
         :param action_index:
@@ -83,7 +83,7 @@ class NetworkIntrusionEnv(gym.Env):
         # print(action)
         return
 
-    def _get_reward(self, action_index):
+    def get_reward(self, action_index):
         """
         Get reward for the action taken in the current state
         :return:
@@ -103,7 +103,7 @@ class NetworkIntrusionEnv(gym.Env):
                 reward = -1.0
         return reward
         
-    def _get_new_state(self):
+    def get_new_state(self):
         """
         Get the next state from current state
         :return:
@@ -114,11 +114,11 @@ class NetworkIntrusionEnv(gym.Env):
         next_state = df.iloc[n + 1][1]
         return next_state
     
-    def _get_random_initial_state(self):
+    def get_random_initial_state(self):
         nrand = random.randint(0, self.df_xy.shape[0])
         return self.df_xy.iloc[nrand][1]
 
-    def _seed(self):
+    def seed(self):
         return
 
 
